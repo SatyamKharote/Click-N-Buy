@@ -10,6 +10,15 @@ import cors from "cors";
 import path from "path";
 
 // const frontendPath = path.join(__dirname, "../frontend/build");
+
+dotenv.config();
+
+connectDB();
+
+const app = express();
+
+app.use(express.json());
+
 app.use(express.static(path.join(__dirname, "../frontend/build")));
 
 // app.use(cors());
@@ -31,14 +40,6 @@ app.use(express.static(path.join(__dirname, "../frontend/build")));
 //   res.set("Referrer-Policy", "strict-origin-when-cross-origin");
 //   next();
 // });
-
-dotenv.config();
-
-connectDB();
-
-const app = express();
-
-app.use(express.json());
 
 app.get("/", (req, res) => {
   res.send("API is Running.....");
