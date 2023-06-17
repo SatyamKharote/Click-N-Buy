@@ -2,7 +2,7 @@
 Shopping cart built with MERN &amp; Redux
 
 <h1> Click N Buy eCommerce Platform </h1>
-
+<img src="https://github.com/SatyamKharote/Click-N-Buy/blob/master/uploads/Home%20Page.PNG" alt="screenshot"/>
 <h2> Features </h2>
 <ul>
   <li>Full featured shopping cart</li>
