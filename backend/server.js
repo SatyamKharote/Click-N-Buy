@@ -8,6 +8,7 @@ import UserRoutes from "./routes/UserRoutes.js";
 import OrderRoutes from "./routes/OrderRoutes.js";
 import cors from "cors";
 import path from "path";
+import { fileURLToPath } from "url";
 
 // const frontendPath = path.join(__dirname, "../frontend/build");
 
@@ -19,7 +20,9 @@ const app = express();
 
 app.use(express.json());
 
-// app.use(express.static(path.join(__dirname, "../frontend/build")));
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
 const frontendPath = path.join(__dirname, "../frontend/build");
 app.use(express.static(frontendPath));
 

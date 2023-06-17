@@ -23,7 +23,8 @@
     "http-proxy-middleware": "^2.0.6",
     "jsonwebtoken": "^9.0.0",
     "mongoose": "^7.1.1",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "url": "^0.11.1"
   },
   "devDependencies": {
     "concurrently": "^8.0.1",
