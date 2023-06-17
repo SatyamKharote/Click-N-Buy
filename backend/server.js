@@ -7,9 +7,10 @@ import ProductRoutes from "./routes/ProductRoutes.js";
 import UserRoutes from "./routes/UserRoutes.js";
 import OrderRoutes from "./routes/OrderRoutes.js";
 import cors from "cors";
+import path from "path";
 
-const frontendPath = path.join(__dirname, "../frontend/build");
-app.use(express.static(frontendPath));
+// const frontendPath = path.join(__dirname, "../frontend/build");
+app.use(express.static(path.join(__dirname, "../frontend/build")));
 
 // app.use(cors());
 // app.use(
